@@ -1,119 +1,81 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Viking Bil</title>
-  <meta name="description" content="Viking Bil – bilservice, reparationer och bilförsäljning.">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
-      color: #222;
-    }
-    header {
-      background: #111;
-      color: #fff;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    header p {
-      margin-top: 10px;
-      font-size: 1.2rem;
-      color: #ccc;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      color: #111;
-      margin-bottom: 10px;
-    }
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .card {
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 20px;
-      background: #fafafa;
-    }
-    footer {
-      background: #111;
-      color: #ccc;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-    }
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Viking Bil – Begagnade bilar i Västervik</title>
+  <meta name="description" content="Viking Bil i Västervik – begagnade bilar, inbyte, finansiering och trygg bilaffär." />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
+
 <body>
 
 
-<header>
-  <h1>Viking Bil</h1>
-  <p>Service • Reparation • Bilaffärer</p>
+<header class="header">
+  <div class="logo">Viking <span>Bil</span></div>
+  <nav>
+    <a href="#cars">Bilar</a>
+    <a href="#tradein">Inbyte</a>
+    <a href="#contact">Kontakt</a>
+  </nav>
 </header>
 
 
-<section>
-  <h2>Om oss</h2>
-  <p>
-    Viking Bil erbjuder pålitlig bilservice och reparationer med fokus på kvalitet
-    och kundnöjdhet. Vi hjälper dig med allt från service till rådgivning vid bilköp.
-  </p>
-</section>
-
-
-<section>
-  <h2>Våra tjänster</h2>
-  <div class="services">
-    <div class="card">
-      <h3>Bilservice</h3>
-      <p>Regelbunden service för att hålla din bil i toppskick.</p>
-    </div>
-    <div class="card">
-      <h3>Reparationer</h3>
-      <p>Felsökning och reparation av de flesta bilmärken.</p>
-    </div>
-    <div class="card">
-      <h3>Bilförsäljning</h3>
-      <p>Hjälp med köp och försäljning av begagnade bilar.</p>
-    </div>
+<section class="hero">
+  <h1>Begagnade bilar i Västervik</h1>
+  <p>Trygg bilaffär • Inbyte • Finansiering</p>
+  <div class="hero-buttons">
+    <a href="#cars" class="btn primary">Se bilar</a>
+    <a href="tel:0700000000" class="btn secondary">Ring oss</a>
   </div>
 </section>
 
 
-<section>
-  <h2>Kontakt</h2>
-  <p>
-    📍 Ort: <strong>Ändra här</strong><br>
-    📞 Telefon: <strong>070-000 00 00</strong><br>
-    ✉️ E-post: <a href="mailto:info@vikingbil.se">info@vikingbil.se</a>
-  </p>
+<section id="cars" class="section">
+  <h2>Bilar till salu</h2>
+
+
+  <div class="filters">
+    <input type="text" id="filterBrand" placeholder="Märke">
+    <input type="number" id="filterMaxPrice" placeholder="Max pris (kr)">
+  </div>
+
+
+  <div id="carList" class="car-grid"></div>
 </section>
 
 
-<footer>
-  © 2026 Viking Bil – Alla rättigheter förbehållna
+<section id="tradein" class="section dark">
+  <h2>Inbyte av bil</h2>
+  <p>Vill du byta in din bil? Skicka en förfrågan så återkommer vi.</p>
+
+
+  <form class="form">
+    <input type="text" placeholder="Registreringsnummer">
+    <input type="text" placeholder="Bilmodell">
+    <input type="number" placeholder="Miltal">
+    <input type="text" placeholder="Telefonnummer">
+    <button class="btn primary">Skicka</button>
+  </form>
+</section>
+
+
+<section id="contact" class="section">
+  <h2>Kontakt</h2>
+  <p><strong>Viking Bil – Västervik</strong></p>
+  <p>📞 <a href="tel:0700000000">070-000 00 00</a></p>
+  <p>✉️ info@vikingbil.se</p>
+  <p>📍 Västervik</p>
+</section>
+
+
+<footer class="footer">
+  © 2026 Viking Bil – Västervik
 </footer>
 
 
+<script src="cars.js"></script>
 </body>
 </html>
+
