@@ -1,0 +1,16 @@
+[
+  {
+    "brand": "Volvo",
+    "model": "V60",
+    "year": 2019,
+    "price": 189000,
+    "mileage": 8500
+  },
+  {
+    "brand": "BMW",
+    "model": "320d",
+    "year": 2018,
+    "price": 209000,
+    "mileage": 9200
+  }
+]
