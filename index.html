@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Viking Bil – Begagnade bilar i Västervik</title>
-  <meta name="description" content="Viking Bil i Västervik – begagnade bilar, inbyte, finansiering och trygg bilaffär." />
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Viking Bil i Västervik – begagnade bilar, inbyte och trygg bilaffär.">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 
 <body>
 
 
-<header class="header">
+<header>
   <div class="logo">Viking <span>Bil</span></div>
   <nav>
     <a href="#cars">Bilar</a>
@@ -25,43 +25,40 @@
 <section class="hero">
   <h1>Begagnade bilar i Västervik</h1>
   <p>Trygg bilaffär • Inbyte • Finansiering</p>
-  <div class="hero-buttons">
-    <a href="#cars" class="btn primary">Se bilar</a>
-    <a href="tel:0700000000" class="btn secondary">Ring oss</a>
-  </div>
+  <a href="#cars" class="btn">Se bilar</a>
 </section>
 
 
-<section id="cars" class="section">
+<section id="cars">
   <h2>Bilar till salu</h2>
 
 
   <div class="filters">
-    <input type="text" id="filterBrand" placeholder="Märke">
-    <input type="number" id="filterMaxPrice" placeholder="Max pris (kr)">
+    <input id="brandFilter" placeholder="Märke">
+    <input id="priceFilter" type="number" placeholder="Max pris">
   </div>
 
 
-  <div id="carList" class="car-grid"></div>
+  <div id="carList" class="cars"></div>
 </section>
 
 
-<section id="tradein" class="section dark">
+<section id="tradein" class="dark">
   <h2>Inbyte av bil</h2>
-  <p>Vill du byta in din bil? Skicka en förfrågan så återkommer vi.</p>
+  <p>Skicka in uppgifter så återkommer vi.</p>
 
 
-  <form class="form">
-    <input type="text" placeholder="Registreringsnummer">
-    <input type="text" placeholder="Bilmodell">
-    <input type="number" placeholder="Miltal">
-    <input type="text" placeholder="Telefonnummer">
-    <button class="btn primary">Skicka</button>
+  <form>
+    <input placeholder="Registreringsnummer">
+    <input placeholder="Bilmodell">
+    <input placeholder="Miltal">
+    <input placeholder="Telefonnummer">
+    <button>Skicka</button>
   </form>
 </section>
 
 
-<section id="contact" class="section">
+<section id="contact">
   <h2>Kontakt</h2>
   <p><strong>Viking Bil – Västervik</strong></p>
   <p>📞 <a href="tel:0700000000">070-000 00 00</a></p>
@@ -70,12 +67,14 @@
 </section>
 
 
-<footer class="footer">
+<footer>
   © 2026 Viking Bil – Västervik
 </footer>
 
 
-<script src="cars.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
 
+
+Skickat från Outlook för Android
